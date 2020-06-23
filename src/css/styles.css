@@ -1,0 +1,33 @@
+body {
+	font-family: 'SegoeUI', sans-serif;
+	font-size: 15px;
+	letter-spacing: 0.01rem;
+}
+
+h1 {
+	font-size: 1.66rem;
+	font-weight: 700;
+}
+
+header {
+	background-color: #20d9d2;
+	color: #fff;
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-items: center;
+	padding: 14px;
+}
+
+header img {
+	height: 25px;
+}
+
+header #title {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	align-items: center;
+}
+
+#title h1 {
+	margin-left: 20px;
+}
