@@ -2,6 +2,11 @@ body {
 	font-family: 'SegoeUI', sans-serif;
 	font-size: 15px;
 	letter-spacing: 0.01rem;
+	color: #666;
+	background-color: #f2f2f2;
+	background-image: url('../img/bg-pattern.svg');
+	background-size: 70px;
+	background-attachment: fixed;
 }
 
 h1 {
@@ -10,19 +15,28 @@ h1 {
 }
 
 header {
-	background-color: #20d9d2;
-	color: #fff;
-	display: grid;
-	grid-template-columns: 1fr;
-	justify-items: center;
-	padding: 14px;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+	width: 100%;
 }
 
-header img {
+main {
+	margin-top: 30px;
+}
+
+#title {
+	background-color: #20d9d2;
+	color: #fff;
+	padding: 14px;
+	position: relative;
+}
+
+#title img {
 	height: 25px;
 }
 
-header #title {
+#title {
 	display: grid;
 	grid-template-columns: repeat(2, auto);
 	align-items: center;
@@ -30,4 +44,75 @@ header #title {
 
 #title h1 {
 	margin-left: 20px;
+}
+
+#user {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 14px 20px;
+	align-items: center;
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+}
+
+#user img#lightMode {
+	height: 19px;
+	margin-right: 20px;
+}
+
+#user img#userImg {
+	height: 27px;
+	position: relative;
+}
+
+ul#userMenu {
+	position: absolute;
+	right: 20px;
+	top: 55px;
+	padding: 10px;
+	background-color: #fff;
+	color: #666;
+	border-radius: 3px;
+	border: 1px solid #dcdcdc;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+
+	/* display: none; */
+}
+
+ul#userMenu li {
+	margin-bottom: 15px;
+}
+
+ul#userMenu li img {
+	height: 0.9rem;
+}
+
+ul#userMenu li#userName {
+	font-weight: 700;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #666;
+}
+
+nav {
+	background-color: #20d9d2;
+	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.16);
+}
+
+ul#tabMenu li {
+	display: inline-block;
+	padding: 20px;
+}
+
+ul#tabMenu li a {
+	color: rgba(255, 255, 255, 0.5);
+	font-weight: 700;
+}
+
+ul#tabMenu li.active {
+	border-bottom: 4px solid #fff;
+}
+
+ul#tabMenu li.active a {
+	color: #fff;
 }

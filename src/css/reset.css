@@ -127,3 +127,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* ---------------------------------
+			USER RESET
+--------------------------------- */
+
+a,
+a:hover,
+a:focus,
+a:visited {
+	color: black;
+	text-decoration: none;
+}
