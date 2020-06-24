@@ -90,7 +90,7 @@ ul#userMenu li img {
 ul#userMenu li#userName {
 	font-weight: 700;
 	padding-bottom: 10px;
-	border-bottom: 1px solid #666;
+	border-bottom: 2px solid #dcdcdc;
 }
 
 nav#tabMenu {
@@ -174,4 +174,71 @@ section#sort ul li#sort.active {
 
 section#sort ul li.active:hover {
 	border: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+section#sort ul li .arrowDown {
+	margin-right: 10px;
+}
+
+section#sort ul.dropdown {
+	position: absolute;
+	padding: 5px;
+	background-color: #fff;
+	color: #666;
+	border-radius: 3px;
+	border: 1px solid #dcdcdc;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+	z-index: 10;
+	margin-top: 15px;
+	margin-left: -7px;
+	max-height: 50vh;
+	overflow-y: scroll;
+}
+
+section#sort ul.dropdown li {
+	display: block;
+}
+
+section#sort ul.dropdown li.search {
+	border-bottom: 2px solid #dcdcdc;
+	margin-bottom: 5px;
+}
+
+section#sort ul.dropdown li.search:hover {
+	background: none;
+}
+
+section#sort ul.dropdown li.search:before {
+	content: '';
+	background-image: url('../img/icons/search.svg');
+	height: 15px;
+	width: 15px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+section#sort ul.dropdown input[type='search'] {
+	border: none;
+	font-family: 'SegoeUI', sans-serif;
+	font-size: 1rem;
+	position: relative;
+	top: -3px;
+}
+
+.hidden {
+	display: none;
+}
+
+section#sort li#hide ul.dropdown li:after {
+	content: '';
+	background-image: url('../img/icons/reorder.svg');
+	height: 12px;
+	width: 12px;
+	display: inline-block;
+	position: absolute;
+	right: 10px;
+}
+
+section#sort li#hide ul.dropdown li.search:after {
+	background: none;
 }
