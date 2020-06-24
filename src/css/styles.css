@@ -76,8 +76,7 @@ ul#userMenu {
 	border-radius: 3px;
 	border: 1px solid #dcdcdc;
 	box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
-
-	/* display: none; */
+	z-index: 10;
 }
 
 ul#userMenu li {
@@ -94,25 +93,85 @@ ul#userMenu li#userName {
 	border-bottom: 1px solid #666;
 }
 
-nav {
+nav#tabMenu {
 	background-color: #20d9d2;
+	position: relative;
+	z-index: 1;
 	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.16);
 }
 
-ul#tabMenu li {
+nav#tabMenu ul li {
 	display: inline-block;
 	padding: 20px;
 }
 
-ul#tabMenu li a {
+nav#tabMenu ul li a {
 	color: rgba(255, 255, 255, 0.5);
 	font-weight: 700;
 }
 
-ul#tabMenu li.active {
+nav#tabMenu ul li.active {
 	border-bottom: 4px solid #fff;
 }
 
-ul#tabMenu li.active a {
+nav#tabMenu ul li.active a {
 	color: #fff;
+}
+
+section#sort {
+	background-color: #fff;
+	border-bottom: 2px solid #dcdcdc;
+	padding: 10px 20px;
+}
+
+section#sort ul li {
+	display: inline-block;
+	margin: 0 0px;
+	cursor: pointer;
+	padding: 5px 7px;
+	border-radius: 5px;
+	border: 2px solid #fff;
+}
+
+section#sort ul li:hover {
+	background-color: #f5f5f5;
+}
+
+section#sort ul li#search:hover {
+	background: none;
+}
+
+section#sort ul li img,
+section#sort ul li p {
+	display: inline-block;
+}
+
+section#sort ul li img {
+	height: 15px;
+	margin-right: 2px;
+}
+
+section#sort ul li p {
+	position: relative;
+	top: -2px;
+}
+
+section#sort ul li#hide.active {
+	background-color: #d0f0fd;
+}
+
+section#sort ul li#filter.active {
+	background-color: #d1f7c4;
+}
+
+section#sort ul li#group.active {
+	background-color: #ede2fe;
+}
+
+section#sort ul li#sort.active {
+	background-color: #fee2d5;
+}
+
+section#sort ul li.active:hover {
+	border: 2px solid rgba(0, 0, 0, 0.05);
 }
