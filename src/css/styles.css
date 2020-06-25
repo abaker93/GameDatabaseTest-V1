@@ -25,10 +25,6 @@ header {
 	width: 100%;
 }
 
-main {
-	margin-top: 30px;
-}
-
 #title {
 	background-color: #20d9d2;
 	color: #fff;
@@ -122,10 +118,26 @@ nav#tabMenu ul li.active a {
 	color: #fff;
 }
 
+main#table {
+	position: relative;
+}
+
+header#tableHeader {
+	position: absolute;
+	top: 0;
+}
+
+/* main header {
+	position: relative;
+}
+
 section#sort {
 	background-color: #fff;
 	border-bottom: 2px solid #dcdcdc;
-	padding: 10px 20px;
+	padding: 7px 20px;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 
 section#sort ul li {
@@ -136,14 +148,6 @@ section#sort ul li {
 	border-radius: 5px;
 	border: 2px solid #fff;
 }
-
-/* section#sort ul li:hover {
-	background-color: #f5f5f5;
-}
-
-section#sort ul li#search:hover {
-	background: none;
-} */
 
 section#sort ul li img,
 section#sort ul li p {
@@ -176,10 +180,6 @@ section#sort ul li#sort.active {
 	background-color: #fee2d5;
 }
 
-/* section#sort ul li.active:hover {
-	border: 2px solid rgba(0, 0, 0, 0.05);
-} */
-
 section#sort ul.dropdown {
 	position: absolute;
 	padding: 5px;
@@ -203,10 +203,6 @@ section#sort ul.dropdown li.search {
 	border-bottom: 2px solid #dcdcdc;
 	margin-bottom: 5px;
 }
-
-/* section#sort ul.dropdown li.search:hover {
-	background: none;
-} */
 
 section#sort ul.dropdown li.search:before {
 	content: '';
@@ -295,11 +291,6 @@ section#sort li#sort ul.dropdown li.add {
 	border-top: 2px solid #dcdcdc;
 }
 
-/* section#sort li#filter ul.dropdown > li:hover,
-section#sort li#filter ul.dropdown ul.filterOptions li.input:hover {
-	background: none;
-} */
-
 section#sort li#group ul.dropdown li.add p.collapse {
 	font-size: 0.8rem;
 	float: right;
@@ -309,7 +300,8 @@ section#sort li#group ul.dropdown li.add p.collapse {
 section#tableHeader {
 	background-color: #f5f5f5;
 	border-bottom: 1px solid #dcdcdc;
-	position: relative;
+	position: absolute;
+	top: 45px;
 }
 
 section#tableHeader input[type='checkbox'] {
@@ -327,6 +319,15 @@ section#tableHeader div {
 	position: relative;
 }
 
+section#tableHeader div:last-child {
+	border-right: none;
+}
+
 section#tableHeader div > * {
 	display: inline-block;
 }
+
+section#tableHeader .column:nth-child(1),
+section#table .column:nth-child(1) {
+	width: 260px;
+} */
