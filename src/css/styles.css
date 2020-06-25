@@ -1,70 +1,4 @@
-.hidden {
-	display: none;
-}
-
-body {
-	font-family: 'SegoeUI', sans-serif;
-	font-size: 15px;
-	letter-spacing: 0.01rem;
-	color: #666;
-	background-color: #f2f2f2;
-	background-image: url('../img/bg-pattern.svg');
-	background-size: 70px;
-	background-attachment: fixed;
-}
-
-h1 {
-	font-size: 1.66rem;
-	font-weight: 700;
-}
-
-header {
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-	width: 100%;
-}
-
-#title {
-	background-color: #20d9d2;
-	color: #fff;
-	padding: 14px;
-	position: relative;
-}
-
-#title img {
-	height: 25px;
-}
-
-#title {
-	display: grid;
-	grid-template-columns: repeat(2, auto);
-	align-items: center;
-}
-
-#title h1 {
-	margin-left: 20px;
-}
-
-#user {
-	position: absolute;
-	right: 0;
-	top: 0;
-	padding: 14px 20px;
-	align-items: center;
-	display: grid;
-	grid-template-columns: repeat(3, auto);
-}
-
-#user img#lightMode {
-	height: 19px;
-	margin-right: 20px;
-}
-
-#user img#userImg {
-	height: 27px;
-	position: relative;
-}
+/*
 
 ul#userMenu {
 	position: absolute;
@@ -116,16 +50,7 @@ nav#tabMenu ul li.active {
 
 nav#tabMenu ul li.active a {
 	color: #fff;
-}
-
-main#table {
-	position: relative;
-}
-
-header#tableHeader {
-	position: absolute;
-	top: 0;
-}
+} */
 
 /* main header {
 	position: relative;
