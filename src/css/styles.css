@@ -1,5 +1,3 @@
-/*
-
 ul#userMenu {
 	position: absolute;
 	right: 20px;
@@ -50,9 +48,9 @@ nav#tabMenu ul li.active {
 
 nav#tabMenu ul li.active a {
 	color: #fff;
-} */
+}
 
-/* main header {
+main header {
 	position: relative;
 }
 
@@ -255,4 +253,4 @@ section#tableHeader div > * {
 section#tableHeader .column:nth-child(1),
 section#table .column:nth-child(1) {
 	width: 260px;
-} */
+}
